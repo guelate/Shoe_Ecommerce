@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './components/Header';
+import SneakerSaleCard from './components/SneakerSaleCard';
 
 
 
 function App() {
   return (
-    <Header />
+    <SneakerSaleCard />
   );
 }
 
