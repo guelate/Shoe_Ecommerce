@@ -18,6 +18,7 @@ export const NUMBER_3 = "3"
 export const NUMBER_4 = "4"
 
 //MISC
+export const HEADER_E_SNEAKERS = "E SNEAKERS"
 export const SneakerSaleCard_VENTE = "vente"
 export const SneakerSaleCard_SHOPPING_CART = "ajoutez au panier"
 

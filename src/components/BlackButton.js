@@ -2,6 +2,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import './style2.css'
 
+const Container = styled.div`
+
+`
+
 const BlackButton = () => {
     return(
         <>

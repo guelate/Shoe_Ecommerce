@@ -1,4 +1,9 @@
 /* eslint-disable no-lone-blocks */
+
+const Container = styled.div`
+
+`
+
 const Newsletter = () => {
   return(
     <>

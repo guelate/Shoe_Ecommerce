@@ -1,4 +1,10 @@
 /* eslint-disable no-lone-blocks */
+
+import styled from "styled-components"
+
+const Container = styled.div`
+
+`
 const Carousel = () => {
     return (
         <>

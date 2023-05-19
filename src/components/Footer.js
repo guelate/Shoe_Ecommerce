@@ -1,5 +1,11 @@
 /* eslint-disable no-lone-blocks */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+
+const Container = style.div`
+
+`
+//use function createTab by modifying props 
+
 const Footer = () => {
     return(
         <>
