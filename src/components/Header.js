@@ -24,7 +24,7 @@ const List = styled.div`
   gap: 20px;
 `;
 
-//export this function
+//export this function and rename it 
 const createTab = (value) => {
   const tab = value;
 

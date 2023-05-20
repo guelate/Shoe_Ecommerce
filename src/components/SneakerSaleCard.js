@@ -47,10 +47,13 @@ const Container = styled.div`
   padding-top: 15%;
   box-sizing: border-box;
 `;
+//export ?
 const Picture = styled.img`
   width: 170px;
   rotate: -19deg;
 `;
+
+//export ?
 const Text = styled.p`
   outline: solid;
 `;

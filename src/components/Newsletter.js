@@ -1,6 +1,12 @@
 /* eslint-disable no-lone-blocks */
-
+import styled from "styled-components"
 const Container = styled.div`
+
+`
+const Info = styled.div`
+
+`
+const Input = styled.div`
 
 `
 

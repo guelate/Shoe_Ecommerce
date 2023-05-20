@@ -1,8 +1,14 @@
 /* eslint-disable no-lone-blocks */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import styled from "styled-components"
 
-const Container = style.div`
-
+const Container = styled.div`
+  display:flex;
+  flex-direction:row;
+  outline:solid;
+`
+// ?
+const Section = styled.div`
 `
 //use function createTab by modifying props 
 

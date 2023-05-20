@@ -1,3 +1,18 @@
+import styled from "styled-components"
+const Container = styled.div`
+    display:flex;
+    flex-direction:row;
+    outline:solid;
+
+`
+const DescriptionCollection = styled.div`
+    display:flex;
+    flex-direction:column;
+    outline:solid;
+`
+//img component
+
+
 const SneakerCollectionCard = () => {
     return(
         <>
