@@ -4,6 +4,7 @@ import React from 'react';
 // import BlackButton from './components/BlackButton';
 // import Carousel from './components/Carousel';
 import SneakerProductCard from './components/SneakerProductCard';
+import Newsletter from './components/Newsletter';
 
 
 
@@ -12,7 +13,8 @@ function App() {
     // <SneakerSaleCard />
     // <Header />
     // <BlackButton />
-    <SneakerProductCard />
+    // <SneakerProductCard />
+    <Newsletter />
   );
 }
 

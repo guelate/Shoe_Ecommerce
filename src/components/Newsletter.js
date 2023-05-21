@@ -1,36 +1,64 @@
 /* eslint-disable no-lone-blocks */
-import styled from "styled-components"
+import styled from "styled-components";
+import BlackButton from "./BlackButton";
+
+//review -> suggest LayoutComponent ?
 const Container = styled.div`
+  outline: solid;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width:700px;
+  padding: 30px 30px;
+  // background-color: black;
+  position: relative;
+  box-sizing: border-box;
+  align-items: center;
+  border-radius:30px;
+  justify-content: space-between;
+`;
+const InfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+`;
 
-`
-const Info = styled.div`
-
-`
-const Input = styled.div`
-
-`
-
+// transform by function to choose betwen p and h3 ?
+// and review properties ?
+const Text = styled.p`
+  outline: solid;
+  margin: 0px;
+  padding: 0px;
+`;
+const Input = styled.input`
+  outline: none;
+  border:none;
+  width:100px;
+  `;
+  const InputWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  height:100px;
+  align-items:center;
+  outline:solid;
+  width:200px;
+  justify-content:space-between;
+  
+`;
 const Newsletter = () => {
-  return(
-    <>
-    </>
-  )
-}
-export default Newsletter
-
-
-{/* <section class="newsletter section">
-<div class="newsletter__container bd-grid">
-  <div>
-    <h3 class="newsletter__title">Abonnez vous  :)</h3>
-    <p class="newsletter__description">Obtenez 10% de réduction sur tout les produits de la boutique</p>
-  </div>
-    <form action="" class="newsletter__subscribe">
-      <input type="text" placeholder="@email.com" class="newsletter__input">
-      <a href="#" class="button">Validez</a>
-    </form>
-
-  </div>
-</div>
-</section>
-</main> */}
+  return (
+    <Container>
+      <InfoWrapper>
+        <Text>Abonnez vous :)</Text>
+        <Text>
+          Obtenez 10% de réduction sur tout les produits de la boutique
+        </Text>
+      </InfoWrapper>
+      <InputWrapper>
+        <Input placeholder="@mail" maxLength={5} />
+        <BlackButton>Validez</BlackButton>
+      </InputWrapper>
+    </Container>
+  );
+};
+export default Newsletter;

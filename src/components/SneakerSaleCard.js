@@ -10,6 +10,7 @@ import {
   SneakerSaleCard_VENTE,
 } from "../utils/Constants/children";
 
+//review and export ?
 const LayoutCard = styled.div`
   box-sizing: border-box;
   position: relative;
@@ -36,6 +37,7 @@ const Vente = styled.div`
   padding: 10px;
 `;
 
+//review and export ?
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -47,6 +49,7 @@ const Container = styled.div`
   padding-top: 15%;
   box-sizing: border-box;
 `;
+
 //export ?
 const Picture = styled.img`
   width: 170px;
