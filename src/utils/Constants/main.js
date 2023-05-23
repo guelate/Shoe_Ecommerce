@@ -19,7 +19,13 @@ export const NUMBER_3 = "3"
 export const NUMBER_4 = "4"
 
 //Text
+export const H1_TEXT = "h1"
+export const H2_TEXT = "h2"
 export const H3_TEXT = "h3"
+export const H4_TEXT = "h4"
+export const H5_TEXT = "h5"
+export const H6_TEXT = "h6"
+
 export const P_TEXT = "p"
 
 //MISC
