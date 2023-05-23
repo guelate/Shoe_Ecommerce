@@ -33,6 +33,8 @@ const Vente = styled.div`
   padding: 10px;
 `;
 
+// SEE TUTORIAL HOW TO ADD GOOGLE FONTS OR CUSTOM FONT IN REACT !!!
+
 const SneakerSaleCard = () => {
   return (
     <CardLayout sneakerSaleCard>

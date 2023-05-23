@@ -19,6 +19,7 @@ export const createText = (children, type) => {
 
 
 /*
+SEE TUTORIAL HOW TO ADD GOOGLE FONTS OR CUSTOM FONT IN REACT !!!
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 --h2-font-size: 1.25rem;
