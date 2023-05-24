@@ -31,6 +31,5 @@ export const P_TEXT = "p"
 //MISC
 export const HEADER_E_SNEAKERS = "E SNEAKERS"
 export const SneakerSaleCard_VENTE = "vente"
-export const SneakerSaleCard_SHOPPING_CART = "ajoutez au panier"
-
+export const SneakerSaleCard_EXPLORE = "Voir le produit"
 

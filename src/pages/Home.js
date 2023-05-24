@@ -9,3 +9,4 @@ export default Home
 //section collection: deux marque nike / adidas
 //revoir le footer (lien a supprimer/modifier/ajouter)
 //supprimer les fichiers inutiles ? full.css ?
+//rajouter les effets d'animations sur les composants

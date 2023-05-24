@@ -1,26 +1,29 @@
 import styled from "styled-components";
 
 //createText()
-export const createText = (children, type) => {
-  const Text =
-    type === "p"
-      ? styled.p`
-          font-size: 1em;
-          letter-spacing: 0.1rem;
-          font-weight:
-          // outline: solid;
-        `
-      : styled.h3`
-          outline: solid;
-        `;
+export const createText = (children, type, fontSize, letterSpacing) => {
+  const validTypes = ["p", "h1", "h2", "h3", "h4", "h5", "h6"];
 
-  return <Text>{children}</Text>;
+  if (!validTypes.includes(type)) {
+    return null;
+  }
+
+  const Text = styled[type]`
+    font-size: ${fontSize};
+    letter-spacing: ${letterSpacing};
+    margin: 0px;
+    padding: 0px;
+  `;
+
+  return <Text>{children}</Text>
+  
 };
-
 
 /*
 SEE TUTORIAL HOW TO ADD GOOGLE FONTS OR CUSTOM FONT IN REACT !!!
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+   
+  font-size: 15px;
+  letter-spacing: 2px;
 
 --h2-font-size: 1.25rem;
 letter-spacing: 0.1rem;

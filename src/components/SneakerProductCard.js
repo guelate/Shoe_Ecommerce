@@ -1,7 +1,10 @@
 /* eslint-disable no-lone-blocks */
 
 import styled from "styled-components"
-import  hightNike1 from "../assets/img/hightNike1.png"
+import CardLayout from "../common/style/CardLayout";
+import { createText } from "../utils/functions/main";
+import * as Aicons from "react-icons/ai";
+import Row from "../common/components/row";
 
 const Container = styled.div`
   display:flex;
@@ -13,37 +16,21 @@ const Container = styled.div`
   padding:10px 20px 30px;
 `
 
-const Picture = styled.img`
-  width: 170px;
-  rotate: -19deg;
-`;
 
-const Text = styled.p`
-  outline: solid;
-`;
 const SneakerProductCard = () => {
 
   return(
-    <Container>
-      <Picture src={hightNike1}/>
-      <Text>Nike jordan</Text>
-      <Text>180 euros</Text>
-      <Text>Ajoutez au panier</Text>
-    </Container>
+    <CardLayout>
+      <Container>
+        {createText()}
+        {createText()}
+        <Row>
+          {createText()}
+          <Aicons.AiOutlineShopping />
+        </Row>
+      </Container>
+    </CardLayout>
   )
 }
 export default SneakerProductCard
 
-
-{/* <article class="sneaker">
-<img
-  src="assets/img/hightNike3.png"
-  alt=""
-  class="sneaker__img"
-/>
-<span class="sneaker__name">Nike jordan</span>
-<span class="sneaker__preci">180 euros</span>
-<a href="" class="button-light"
-  >Ajoutez au panier<i class='bx bx-shopping-bag'></i></i
-></a>
-</article> */}

@@ -6,7 +6,7 @@ const CardContainer = styled.div`
   position: absolute;
   width: 90%;
   height: 92%;
-  // outline: solid;
+  gap:20px;
   align-items: center;
   padding-top: 15%;
   box-sizing: border-box;
