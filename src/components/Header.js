@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import styled from "styled-components";
 import { HEADER_E_SNEAKERS } from "../utils/Constants/children";
+import { createHeaderTitle } from "../utils/functions/main";
 
 const Container = styled.div`
   position: fixed;
@@ -17,25 +18,8 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-const List = styled.div`
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-`;
 
-//export this function and rename it 
-const createTab = (value) => {
-  const tab = value;
 
-  return (
-    <List>
-      {tab.map((element, index) => (
-        <p key={index}>{element}</p>
-      ))}
-    </List>
-  );
-};
 
 //change creatab using by tab or constant because the Header componant it use 
 //<Home />
@@ -45,7 +29,7 @@ const Header = () => {
       <a href="#">
         {HEADER_E_SNEAKERS}
       </a>
-      {createTab(["premier", "deuxieme", "troisieme", "quatrieme"])}
+      {createHeaderTitle(["premier", "deuxieme", "troisieme", "quatrieme"])}
     </Container>
   );
 };

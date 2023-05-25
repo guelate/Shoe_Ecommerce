@@ -1,13 +1,9 @@
-/* CONSTANT FOR CHILDREN PARAMETER OF COMPONENT
-
-HOW: COMPONENT_CHILDREN (value of children)
-
-*/
-
-//review the file name 
-
 //MODEL
+export const SneakerCollection_Nike = "Nike"
+export const SneakerCollection_Adidas = "Adidas"
+export const Sneaker_Current_Collection = "Collection actuelle"
 export const SneakerSaleCard_NIKE1 = "Nike 1"
+export const SneakerProductCard_NIKE_JORDAN = 'Nike Jordan'
 
 //PRICE
 export const SneakerSaleCard_PRICE_180 = "180 euros"
@@ -32,4 +28,6 @@ export const P_TEXT = "p"
 export const HEADER_E_SNEAKERS = "E SNEAKERS"
 export const SneakerSaleCard_VENTE = "vente"
 export const SneakerSaleCard_EXPLORE = "Voir le produit"
+export const SneakerCollection_EXPLORE = "Explorer maintenant"
+export const Sneaker_SHOPPING_CARD = "Ajoutez au panier"
 

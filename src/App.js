@@ -1,10 +1,9 @@
 import React from 'react';
-import SneakerSaleCard from './components/SneakerSaleCard';
 import './App.css'
-
+import Newsletter from './components/Newsletter';
 function App() {
   return (
-    <SneakerSaleCard />
+    <Newsletter />
   );
 }
 
