@@ -3,6 +3,11 @@ const Home = () => {
 }
 export default Home
 
+
+//follow this rules: 
+
+// work in other branch to try your gitworkflow 
+
 //section header
 //section principale 
 //section en vente

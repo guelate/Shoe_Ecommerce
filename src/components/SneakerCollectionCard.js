@@ -11,7 +11,6 @@ import {AiOutlineArrowRight} from "react-icons/ai";
 import Column from "../common/components/column";
 
 const SneakerCollectionCard = () => {
-  //add propertie cardLayout flex:row ?
   return (
     <CardLayout sneakerCollectionCard>
       <CardContainer sneakerCollectionCard>
@@ -40,4 +39,3 @@ const SneakerCollectionCard = () => {
   );
 };
 export default SneakerCollectionCard;
-//reprendre les anciens composant et modifier le style, surbrillance ?

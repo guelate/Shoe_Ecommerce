@@ -10,6 +10,7 @@ const Row = styled.div`
     padding:${props => props.home ? "0% 35px 0% 16px;":null};
     justify-content:space-between;
     align-items:center;
+    // outline:solid;
 
 `
 

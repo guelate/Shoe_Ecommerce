@@ -14,6 +14,7 @@ export const LETTER_SPACING_2px = "2px";
 
 /*===== Color =====*/
 
+// export const WHITE_COLOR = "white";
 export const WHITE_COLOR = "#f2f2f2";
 export const GREY_COLOR = "#f2f2f2";
 export const BLACK_COLOR = "#141414";

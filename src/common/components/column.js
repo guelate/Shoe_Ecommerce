@@ -8,6 +8,7 @@ const Column = styled.div`
     ${props => props.marginTop ? "margin-top:45%":""};
     justify-content:space-between;
     box-sizing:boder-box;
-
+    align-items:${props => props.newsletter ? "center":""};
+    gap:${props => props.newsletter ? "15px":""};
 `
 export default Column;

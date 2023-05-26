@@ -1,25 +1,25 @@
 /* eslint-disable no-lone-blocks */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import styled from "styled-components"
+import { BLACK_COLOR, WHITE_COLOR } from "../../utils/Constants/style"
 
 
-//delete position:absolute for newsletter component
 const Container = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     border-radius: 15px;
-    outline: solid;
     height: 60px;
-    // position: absolute;
     width: auto;
     align-items: center;
-    padding:0% 1%;
+    padding:${props => props.newsletter ? props.newsletter :"0% 1%"};
+    color:${WHITE_COLOR};
+    background:${BLACK_COLOR};
 `
 
-const BlackButton = ({children}) => {
+const BlackButton = ({children,padding}) => {
     return(
-        <Container>{children}</Container>
+        <Container newsletter={padding}>{children}</Container>
     )
 }
 

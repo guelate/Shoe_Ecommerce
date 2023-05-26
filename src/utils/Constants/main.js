@@ -30,4 +30,6 @@ export const SneakerSaleCard_VENTE = "vente"
 export const SneakerSaleCard_EXPLORE = "Voir le produit"
 export const SneakerCollection_EXPLORE = "Explorer maintenant"
 export const Sneaker_SHOPPING_CARD = "Ajoutez au panier"
+export const Newsletter_OFFER = "Obtenez 10% de réduction sur tout les produits de la boutique"
+export const Newsletter_SUBSCRITING = "Abonnez vous :)"
 
