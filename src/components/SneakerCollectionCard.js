@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import CardLayout from "../common/Layout/CardLayout";
 import { createText } from "../utils/functions/main";
 import Row from "../common/components/row";

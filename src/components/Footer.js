@@ -1,55 +1,61 @@
 /* eslint-disable no-lone-blocks */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import styled from "styled-components"
+import Row from "../common/components/row";
+import Column from "../common/components/column";
+import { createText } from "../utils/functions/main";
+import * as constantStyle from "../utils/Constants/style";
+import * as constantText from "../utils/Constants/main";
 
-const Container = styled.div`
-  display:flex;
-  flex-direction:row;
-  outline:solid;
-`
-// ?
-const Section = styled.div`
-`
-//use function createTab by modifying props 
+const Footer = ({ firstTab, secondTab, thirdTab, fourthTab }) => {
+  const column_tab_first = firstTab;
+  const column_tab_second = secondTab;
+  const column_tab_third = thirdTab;
+  const column_tab_fourth = fourthTab;
 
-const Footer = () => {
-    return(
-        <>
-        
-        </>
-    )
-}
+  return (
+    <Row footer>
+      <Column>
+        {column_tab_first.map((element) =>
+          createText(
+            element,
+            constantText.H1_TEXT,
+            constantStyle.FONT_SIZE_20px,
+            constantStyle.LETTER_SPACING_2px
+          )
+        )}
+      </Column>
+      <Column>
+        {column_tab_second.map((element) =>
+          createText(
+            element,
+            constantText.H1_TEXT,
+            constantStyle.FONT_SIZE_20px,
+            constantStyle.LETTER_SPACING_2px
+          )
+        )}
+      </Column>
+      <Column>
+        {column_tab_third.map((element) =>
+          createText(
+            element,
+            constantText.H1_TEXT,
+            constantStyle.FONT_SIZE_20px,
+            constantStyle.LETTER_SPACING_2px
+          )
+        )}
+      </Column>
+      <Column>
+        {column_tab_fourth.map((element) =>
+          createText(
+            element,
+            constantText.H1_TEXT,
+            constantStyle.FONT_SIZE_20px,
+            constantStyle.LETTER_SPACING_2px
+          )
+        )}
+      </Column>
+    </Row>
+  );
+};
 
-export default Footer
-
-{/* <div class="footer__container bd-grid">
-
-<div class="footer__box">
-  <h3 class="footer__title">E SNEAKERS</h3>
-  <p class="footer__description">Nouvelle collection 2023</p>
-</div>
-
-<div class="footer__box">
-  <h3 class="footer__title">EXPLORER</h3>
-  <ul>
-    <li><a href="#home" class="footer__link">Accueil</a></li>
-    <li><a href="#featured" class="footer__link">En vedette</a></li>
-    <li><a href="#new" class="footer__link">Nouveauté</a></li>
-  </ul>
-</div>
-
-<div class="footer__box">
-  <h3 class="footer__title">SUPPORT</h3>
-  <ul>
-    <li><a href="#" class="footer__link">Accueil</a></li>
-    <li><a href="#" class="footer__link">En vedette</a></li>
-    <li><a href="#" class="footer__link">Nouveauté</a></li>
-  </ul>
-</div>
-
-<div class="footer__box">
-  <a href="" class="footer__social"><i class='bx bxl-facebook'></i></a> 
-  <a href="" class="footer__social"><i class='bx bxl-instagram'></i></a> 
-  <a href="" class="footer__social"><i class='bx bxl-twitter'></i></a> 
-</div>
-</div> */}
+export default Footer;
