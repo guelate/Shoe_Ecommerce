@@ -5,7 +5,7 @@ import styled from "styled-components";
 import hightNike1 from "../assets/img/hightNike1.png";
 import CardLayout from "../common/Layout/CardLayout";
 import CardContainer from "../common/Layout/CardContainer";
-import CardPicture from "../common/Layout/CardPicture";
+import CardPicture from "../common/components/CardPicture";
 import Row from "../common/components/row";
 import * as HIAicons from "react-icons/hi";
 import * as constantStyle from "../utils/Constants/style";
@@ -17,8 +17,8 @@ const Vente = styled.div`
   position: absolute;
   width: 25%;
   height: 40px;
-  background: ${BLACK_COLOR};
-  color: ${WHITE_COLOR};
+  background: ${constantStyle.BLACK_COLOR};
+  color: ${constantStyle.WHITE_COLOR};
   border-radius: 7px;
   outline: solid;
   align-items: center;
@@ -32,7 +32,7 @@ const Vente = styled.div`
 
 const SneakerSaleCard = () => {
   const iconStyle = {
-    color: BLACK_COLOR,
+    color: constantStyle.BLACK_COLOR,
     fontSize: "25px",
   };
 
@@ -54,7 +54,7 @@ const SneakerSaleCard = () => {
           constantStyle.FONT_SIZE_25px,
           constantStyle.LETTER_SPACING_1px
         )}
-        {createText(SneakerSaleCard_PRICE_180, H4_TEXT, FONT_SIZE_20px)}
+        {createText(constantText.SneakerSaleCard_PRICE_180, constantText.H4_TEXT, constantStyle.FONT_SIZE_20px)}
         <Row home margin="35px 0px 0px 0px;">
           {createText(
             constantText.SneakerSaleCard_EXPLORE,

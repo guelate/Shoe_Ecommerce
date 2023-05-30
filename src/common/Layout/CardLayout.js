@@ -3,6 +3,7 @@ import { GREY_COLOR } from "../../utils/Constants/style";
 
 const CardLayout = styled.div`
 box-sizing: border-box;
+// position:absolute;
   display: flex;
   background: ${GREY_COLOR};
   flex-direction:${props => props.sneakerCollectionCard ? "row;":"column;"};
