@@ -1,8 +1,8 @@
 /* eslint-disable no-lone-blocks */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import styled from "styled-components";
-import { HEADER_E_SNEAKERS } from "../utils/Constants/children";
 import { createHeaderTitle } from "../utils/functions/main";
+import {AiOutlineShopping} from "react-icons/ai"
 
 const Container = styled.div`
   position: fixed;
@@ -12,25 +12,31 @@ const Container = styled.div`
   box-sizing: border-box;
   padding-left: 200px;
   padding-right: 250px;
-  outline: solid;
   height: 100px;
   width: 100%;
   justify-content: space-between;
+  z-index: 999; 
+
 `;
 
 
+const Wrapper = styled.div`
+  display:flex;
+  flex-direction:row;
+  gap:10px;
 
+`
 
-//change creatab using by tab or constant because the Header componant it use 
-//<Home />
 const Header = () => {
   return (
     <Container>
-      <a href="#">
-        {HEADER_E_SNEAKERS}
-      </a>
-      {createHeaderTitle(["premier", "deuxieme", "troisieme", "quatrieme"])}
+      {createHeaderTitle(["E SNEAKER"])}
+      <Wrapper>
+        {createHeaderTitle(["Accueil", "En vedette", "Nouveautés", "Boutique",<AiOutlineShopping />])}
+      </Wrapper>
     </Container>
   );
 };
 export default Header;
+
+
