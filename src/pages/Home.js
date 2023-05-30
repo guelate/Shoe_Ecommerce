@@ -12,6 +12,8 @@ const Container = styled.div`
   flex-direction: column;
   outline: solid;
 `;
+
+//this function it use again so create exporting component 
 const MainSection = styled.div`
   display: flex;
   flex-direction: column;
@@ -26,9 +28,10 @@ const SellAndCollectionSection = styled.div`
   border: 1px solid red;
   height: 100vh;
   padding: 10% 10%;
-  gap:45px;
+  gap: 45px;
   align-items: center;
 `;
+
 const Wrapper = styled.div`
   outline: solid;
   display: flex;
@@ -69,8 +72,8 @@ const Home = () => {
           )}
         </Title>
         <Wrapper>
-            <SneakerCollectionCard />
-            <SneakerCollectionCard />
+          <SneakerCollectionCard />
+          <SneakerCollectionCard />
         </Wrapper>
       </SellAndCollectionSection>
       <Footer />

@@ -19,10 +19,10 @@ const Container = styled.div`
 `;
 
 const CustomColumn = styled.div`
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  outline:solid;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  outline: solid;
 `;
 
 const Wrapper = styled.div`
@@ -32,72 +32,68 @@ const Wrapper = styled.div`
 `;
 
 const Footer = () => {
-
-
   return (
     <Container>
       <CustomColumn>
-      {createText(
+        {createText(
           constantText.HEADER_E_SNEAKERS,
           constantText.H1_TEXT,
           constantStyle.FONT_SIZE_20px,
           constantStyle.LETTER_SPACING_1px
         )}
-          {createText(
+        {createText(
           constantText.NEW_COLLECTION,
           constantText.P_TEXT,
           constantStyle.FONT_SIZE_15px,
           constantStyle.LETTER_SPACING_2px
         )}
-     
       </CustomColumn>
       <CustomColumn>
-      {createText(
+        {createText(
           constantText.EXPLORER,
           constantText.H1_TEXT,
           constantStyle.FONT_SIZE_20px,
           constantStyle.LETTER_SPACING_1px
         )}
-         {createText(
+        {createText(
           constantText.ACCUEIL,
           constantText.P_TEXT,
           constantStyle.FONT_SIZE_15px,
           constantStyle.LETTER_SPACING_1px
         )}
-          {createText(
+        {createText(
           constantText.EN_VEDETTE,
           constantText.P_TEXT,
           constantStyle.FONT_SIZE_15px,
           constantStyle.LETTER_SPACING_1px
         )}
-           {createText(
+        {createText(
           constantText.NEWS,
           constantText.P_TEXT,
           constantStyle.FONT_SIZE_15px,
           constantStyle.LETTER_SPACING_1px
         )}
-          
       </CustomColumn>
       <CustomColumn>
-      {createText(
+        {createText(
           constantText.SUPPORT,
           constantText.H1_TEXT,
           constantStyle.FONT_SIZE_20px,
           constantStyle.LETTER_SPACING_2px
         )}
-          {createText(
+        {createText(
           constantText.ACCUEIL,
           constantText.P_TEXT,
           constantStyle.FONT_SIZE_15px,
           constantStyle.LETTER_SPACING_1px
         )}
-          {createText(
+        {createText(
           constantText.EN_VEDETTE,
           constantText.P_TEXT,
           constantStyle.FONT_SIZE_15px,
           constantStyle.LETTER_SPACING_1px
         )}
-           {createText(
+        {createText(
           constantText.NEWS,
           constantText.P_TEXT,
           constantStyle.FONT_SIZE_15px,
