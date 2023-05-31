@@ -22,7 +22,7 @@ const CustomColumn = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  outline: solid;
+  // outline: solid;
 `;
 
 const Wrapper = styled.div`

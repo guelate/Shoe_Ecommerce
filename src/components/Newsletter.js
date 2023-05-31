@@ -14,7 +14,7 @@ const Container = styled.div`
   box-sizing: border-box;
   flex-direction: row;
   padding: 20px 25px;
-  outline: solid;
+  // outline: solid;
   border-radius:15px;
   color:white;
   background:${constantStyle.BLACK_COLOR};

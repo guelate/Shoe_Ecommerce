@@ -10,7 +10,7 @@ const Row = styled.div`
   justify-content: ${(props) =>
     props.carousel ? "space-between" : "space-between"};
   align-items: ${props => props.footer ? "":"center"}; 
-  outline: solid;
+  // outline: solid;
 `;
 
 export default Row;

@@ -20,7 +20,7 @@ const Vente = styled.div`
   background: ${constantStyle.BLACK_COLOR};
   color: ${constantStyle.WHITE_COLOR};
   border-radius: 7px;
-  outline: solid;
+  // outline: solid;
   align-items: center;
   text-align: center;
   align-content: center;

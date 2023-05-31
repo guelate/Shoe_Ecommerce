@@ -9,7 +9,7 @@ const CustomField = styled.label`
     position: relative;
     font-size: 14px;
     width:230px;
-    outline:solid;
+    // outline:solid;
     justify-content:space-between;
     border-radius:10px;
     background:white;
@@ -18,7 +18,7 @@ const Input = styled.input`
   border: none;
   border-radius: 3px;
   width: 150px;
-  outline: none;
+  // outline: none;
   font-size: 14px;
   background:white;
   align-items:center;

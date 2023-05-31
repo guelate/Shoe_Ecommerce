@@ -13,7 +13,7 @@ import BlackButton from "../common/components/BlackButton";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  outline: solid;
+  // outline: solid;
 `;
 
 //this function it use again so create exporting component
@@ -21,7 +21,6 @@ const MainSection = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  border: 1px solid blue;
   height: 100vh;
   margin-top: 100px;
   padding: 10% 20% 20%;
@@ -30,10 +29,10 @@ const MainSection = styled.div`
 const HomeWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  outline: solid;
+  // outline: solid;
   width: 100%;
   height: 100%;
-  padding: 10% 23%;
+  padding: 10% 20%;
   box-sizing: border-box;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +42,7 @@ const Cercle = styled.div`
   width: 310px;
   height: 310px;
   border-radius: 50%;
-  outline: solid;
+  // outline: solid;
   background: ${constantStyle.BLACK_COLOR};
 `;
 
@@ -53,14 +52,13 @@ const TextWrapper = styled.div`
   height: 70%;
   width: 35%;
   flex-direction: column;
-  gap:10px;
-  outline: solid;
+  justify-content:space-between;
+  // outline: solid;
 `;
 
 const SellAndCollectionSection = styled.div`
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   height: 100vh;
   padding: 10% 10%;
   gap: 45px;
@@ -68,7 +66,7 @@ const SellAndCollectionSection = styled.div`
 `;
 
 const Wrapper = styled.div`
-  outline: solid;
+  // outline: solid;
   display: flex;
   flex-direction: row;
   padding: 0% 10%;
@@ -77,7 +75,7 @@ const Wrapper = styled.div`
 const Title = styled.div`
   display: flex;
   flex-direction: row;
-  outline: solid;
+  // outline: solid;
 `;
 
 const Home = () => {
