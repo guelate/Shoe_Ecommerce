@@ -6,6 +6,8 @@ import { createText } from "../utils/functions/main";
 import * as constantStyle from "../utils/Constants/style";
 import * as constantText from "../utils/Constants/main";
 import SneakerCollectionCard from "../components/SneakerCollectionCard";
+import CardPicture from "../common/components/CardPicture";
+import yeezy1 from "../assets/img/yeezy1.png";
 
 const Container = styled.div`
   display: flex;
@@ -13,13 +15,31 @@ const Container = styled.div`
   outline: solid;
 `;
 
-//this function it use again so create exporting component 
+//this function it use again so create exporting component
 const MainSection = styled.div`
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border: 1px solid blue;
   height: 100vh;
   margin-top: 100px;
+  padding: 10% 20% 20%;
+`;
+// haut | horizontal | bas */
+const HomeWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  outline: solid;
+  width: 100%;
+  height: 100%;
+`;
+
+const Cercle = styled.div`
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  outline: solid;
+  background: ${constantStyle.BLACK_COLOR};
 `;
 
 const SellAndCollectionSection = styled.div`
@@ -44,11 +64,25 @@ const Title = styled.div`
   flex-direction: row;
   outline: solid;
 `;
+
+// Révélez votre style avec notre collection de sneakers haut de gamme, où le confort rencontre la mode à chaque pas.
+// "Le style et le confort réunis dans nos sneakers haut de gamme."
+// "Style ultime : explorez notre sélection de sneakers haut de gamme !"
+// "Confort et élégance : découvrez nos sneakers premium !"
+// "Sneakers haut de gamme : le choix idéal pour le style moderne et le confort absolu !"
+
+
 const Home = () => {
   return (
     <Container>
       <Header />
-      <MainSection></MainSection>
+      <MainSection>
+        <HomeWrapper>
+          <Cercle>
+            <CardPicture home src={yeezy1} />
+          </Cercle>
+        </HomeWrapper>
+      </MainSection>
       <SellAndCollectionSection>
         <Title>
           {createText(
