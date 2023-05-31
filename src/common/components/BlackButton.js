@@ -12,7 +12,7 @@ const Container = styled.div`
     height: 60px;
     width: auto;
     align-items: center;
-    padding:${props => props.newsletter ? props.newsletter :"0% 1%"};
+    padding:${props => props.newsletter ? props.newsletter :"0% 27%"};
     color:${WHITE_COLOR};
     background:${BLACK_COLOR};
 `

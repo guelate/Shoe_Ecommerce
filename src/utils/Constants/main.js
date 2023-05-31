@@ -1,3 +1,7 @@
+//HOME
+export const STYLE_AND_CONFORT = "Style et Confort"
+export const HOME_TEXTE = "explorez notre sélection de sneakers haut de gamme !"
+
 //MODEL
 export const SneakerCollection_Nike = "Nike"
 export const SneakerCollection_Adidas = "Adidas"
@@ -39,4 +43,5 @@ export const EXPLORER = "EXPLORER"
 export const SUPPORT = "SUPPORT"
 export const ACCUEIL = "Accueil"
 export const NEWS = "Nouveauté"
+
 

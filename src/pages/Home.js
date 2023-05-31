@@ -8,6 +8,7 @@ import * as constantText from "../utils/Constants/main";
 import SneakerCollectionCard from "../components/SneakerCollectionCard";
 import CardPicture from "../common/components/CardPicture";
 import yeezy1 from "../assets/img/yeezy1.png";
+import BlackButton from "../common/components/BlackButton";
 
 const Container = styled.div`
   display: flex;
@@ -32,6 +33,10 @@ const HomeWrapper = styled.div`
   outline: solid;
   width: 100%;
   height: 100%;
+  padding: 10% 23%;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Cercle = styled.div`
@@ -40,6 +45,16 @@ const Cercle = styled.div`
   border-radius: 50%;
   outline: solid;
   background: ${constantStyle.BLACK_COLOR};
+`;
+
+const TextWrapper = styled.div`
+
+  display: flex;
+  height: 70%;
+  width: 35%;
+  flex-direction: column;
+  gap:10px;
+  outline: solid;
 `;
 
 const SellAndCollectionSection = styled.div`
@@ -65,19 +80,27 @@ const Title = styled.div`
   outline: solid;
 `;
 
-// Révélez votre style avec notre collection de sneakers haut de gamme, où le confort rencontre la mode à chaque pas.
-// "Le style et le confort réunis dans nos sneakers haut de gamme."
-// "Style ultime : explorez notre sélection de sneakers haut de gamme !"
-// "Confort et élégance : découvrez nos sneakers premium !"
-// "Sneakers haut de gamme : le choix idéal pour le style moderne et le confort absolu !"
-
-
 const Home = () => {
   return (
     <Container>
       <Header />
       <MainSection>
         <HomeWrapper>
+          <TextWrapper>
+            {createText(
+              constantText.STYLE_AND_CONFORT,
+              constantText.H2_TEXT,
+              constantStyle.FONT_SIZE_20px,
+              constantStyle.LETTER_SPACING_1px
+            )}
+            {createText(
+              constantText.HOME_TEXTE,
+              constantText.H2_TEXT,
+              constantStyle.FONT_SIZE_15px,
+              constantStyle.LETTER_SPACING_1px
+            )}
+            <BlackButton>Explorer !</BlackButton>
+          </TextWrapper>
           <Cercle>
             <CardPicture home src={yeezy1} />
           </Cercle>
