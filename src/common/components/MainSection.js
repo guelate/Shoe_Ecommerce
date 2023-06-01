@@ -4,9 +4,12 @@ const MainSection = styled.div`
   box-sizing: border-box; 
   display: flex;
   flex-direction:${props => props.direction ? props.direction : ""};
-  height: 100vh;
+  height:${props => props.height ? props.height : "100vh"};
   margin-top: 100px;
   padding: ${props => props.padding ? props.padding : ""};
+  gap:${props => props.gap ? props.gap : ""};
+  align-items:${props => props.align ? props.align : ""};
+  
 `;
 
 export default MainSection
