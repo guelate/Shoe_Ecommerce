@@ -14,36 +14,41 @@ const Container = styled.div`
 const RowWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  gap:30px;
+  gap: 30px;
 `;
-/* haut | horizontal | bas */
+
 const Shop = () => {
   return (
     <Container>
-
       {/* modify header title: accueil , homme , femme */}
       <Header />
-      <MainSection direction="column" padding="10% 20% 10%" height="auto" gap="30px" align="center">
+      <MainSection
+        direction="column"
+        padding="10% 20% 10%"
+        height="auto"
+        gap="30px"
+        align="center"
+      >
         <RowWrapper>
           <SneakerProductCard />
           <SneakerProductCard />
           <SneakerProductCard />
           <SneakerProductCard />
         </RowWrapper>
-         <RowWrapper>
+        <RowWrapper>
           <SneakerProductCard />
           <SneakerProductCard />
           <SneakerProductCard />
           <SneakerProductCard />
-          </RowWrapper>
-          <RowWrapper>
+        </RowWrapper>
+        <RowWrapper>
           <SneakerProductCard />
           <SneakerProductCard />
           <SneakerProductCard />
           <SneakerProductCard />
         </RowWrapper>
         <Carousel />
-        </MainSection>
+      </MainSection>
       <Footer />
     </Container>
   );
