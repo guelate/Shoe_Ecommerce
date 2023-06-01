@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- related to all caracteres of a web page -->
+    <meta charset="UTF-8" />
+
+    <!-- content:size view, initial-scale:zoom on view page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>E-Sneakers</title>
+  </head>
+
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-grid">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bxs-grid"></i>
+        </div>
+        <a href="#" class="nav__logo">E SNEAKERS</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Accueil</a>
+            </li>
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">En vedette</a>
+            </li>
+            <li class="nav__item">
+              <a href="#new"  class="nav__link">Nouveautés</a>
+            </li>
+            <li class="nav__item">
+              <a href="./shop.html" class="nav__link">Boutique</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__shop">
+          <i class="bx bx-shopping-bag"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home" id="home">
+        <div class="home__container bd-grid">
+          <div class="home__sneaker">
+            <div class="home__shape"></div>
+            <img src="assets/img/yeezy1.png" alt="" class="home__img" />
+          </div>
+
+          <div class="home__data">
+            <span class="home__new">Nouveauté</span>
+            <h1 class="home__title">
+              YEEZY BOOST <br />
+              350
+            </h1>
+            <p class="home__description">Explorer pour voir en détail</p>
+            <a href="#" class="button">Explorer maintenant</a>
+          </div>
+        </div>
+      </section>
+      <!--===== FEATURED =====-->
+      <section class="featured section" id="featured">
+        <h2 class="section-title">En vedette</h2>
+
+        <div class="featured__container bd-grid">
+          <article class="sneaker">
+            <div class="sneaker__sale">Vente</div>
+            <img src="assets/img/hightNike1.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Nike 1</span>
+            <span class="sneaker__preci">180 euros</span>
+            <a href="" class="button-light"
+              >Ajouter au panier<i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </article>
+
+          <article class="sneaker">
+            <div class="sneaker__sale">Vente</div>
+            <img src="assets/img/hightNike2.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Nike 2</span>
+            <span class="sneaker__preci">180 euros</span>
+            <a href="" class="button-light"
+              >Ajouter au panier<i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </article>
+
+          <article class="sneaker">
+            <div class="sneaker__sale">Vente</div>
+            <img src="assets/img/hightNike3.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Nike 3</span>
+            <span class="sneaker__preci">180 euros</span>
+            <a href="" class="button-light"
+              >Ajouter au panier<i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </article>
+        </div>
+      </section>
+      <!--===== COLLECTION =====-->
+
+      <section class="collection section">
+        <div class="collection__container bd-grid">
+
+          <div class="collection__card">
+            <div class="collection__data">
+              <h3 class="collection__name">Nike</h3>
+              <p class="collection__description">Collection actuelle</p>
+              <a href="#" class="button-light"
+                >Explorer maintenant<i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+
+            <img
+              src="assets/img/collection1.png"
+              alt=""
+              class="collection__img"
+            />
+          </div>
+
+          <div class="collection__card">
+            <div class="collection__data">
+              <h3 class="collection__name">Nike</h3>
+              <p class="collection__description">Collection actuelle</p>
+              <a href="#" class="button-light"
+                >Explorer maintenant<i class="bx bx-right-arrow-alt"></i
+              ></a>
+            </div>
+
+            <img
+              src="assets/img/collection2.png"
+              alt=""
+              class="collection__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--===== NEW COLLECTION =====-->
+  
+      <section class="new section" id="new">
+        <h2 class="section-title">NOUVELLE COLLECTION</h2>
+ 
+        <div class="new__container bd-grid">
+          <div class="new__mens">
+            <!-- <span class="new__preci">From $79.99</span> -->
+            <h3 class="new__title">Nike Homme</h3>
+              <img src="assets/img/collectionNike.png" alt="" class="new__mens-img"/>
+              <a href="#" class="button-light">Voir Collection <i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+
+          <div class="new__sneaker">
+             <div class="new__sneaker-card">
+              <img src="assets/img/collection1.png" alt="" class="new__sneaker-img">
+              <div class="new__sneaker-overlay">
+                <a href="#" class="button">Ajouter au panier</a>
+              </div>
+             </div>
+
+             <div class="new__sneaker-card">
+              <img src="assets/img/collection2.png" alt="" class="new__sneaker-img">
+              <div class="new__sneaker-overlay">
+                <a href="#" class="button">Ajouter au panier</a>
+              </div>
+             </div>
+
+             <div class="new__sneaker-card">
+              <img src="assets/img/collection3.png" alt="" class="new__sneaker-img">
+              <div class="new__sneaker-overlay">
+                <a href="#" class="button">Ajouter au panier</a>
+              </div>
+             </div>
+    
+
+          <div class="new__sneaker-card">
+            <img src="assets/img/collection3.png" alt="" class="new__sneaker-img">
+            <div class="new__sneaker-overlay">
+              <a href="#" class="button">Ajouter au panier</a>
+            </div>
+           </div>
+
+           <div class="new__sneaker-card">
+            <img src="assets/img/collection3.png" alt="" class="new__sneaker-img">
+            <div class="new__sneaker-overlay">
+              <a href="#" class="button">Ajouter au panier</a>
+            </div>
+           </div>
+
+        </div>
+      </section>
+      <!--===== NEWSLETTER =====-->
+
+      <section class="newsletter section">
+        <div class="newsletter__container bd-grid">
+          <div>
+            <h3 class="newsletter__title">Abonnez vous  :)</h3>
+            <p class="newsletter__description">Obtenez 10% de réduction sur tout les produits de la boutique</p>
+          </div>
+            <form action="" class="newsletter__subscribe">
+              <input type="text" placeholder="@email.com" class="newsletter__input">
+              <a href="#" class="button">Validez</a>
+            </form>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+      <div class="footer__container bd-grid">
+
+        <div class="footer__box">
+          <h3 class="footer__title">E SNEAKERS</h3>
+          <p class="footer__description">Nouvelle collection 2023</p>
+        </div>
+
+        <div class="footer__box">
+          <h3 class="footer__title">EXPLORER</h3>
+          <ul>
+            <li><a href="#home" class="footer__link">Accueil</a></li>
+            <li><a href="#featured" class="footer__link">En vedette</a></li>
+            <li><a href="#new" class="footer__link">Nouveauté</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__box">
+          <h3 class="footer__title">SUPPORT</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Accueil</a></li>
+            <li><a href="#" class="footer__link">En vedette</a></li>
+            <li><a href="#" class="footer__link">Nouveauté</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__box">
+          <a href="" class="footer__social"><i class='bx bxl-facebook'></i></a> 
+          <a href="" class="footer__social"><i class='bx bxl-instagram'></i></a> 
+          <a href="" class="footer__social"><i class='bx bxl-twitter'></i></a> 
+        </div>
+      </div>
+    </footer>
+    <!--===== MAIN JS =====-->
+    <script src="script.js"></script>
+  </body>
+</html>
