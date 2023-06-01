@@ -10,23 +10,16 @@ import CardPicture from "../common/components/CardPicture";
 import yeezy1 from "../assets/img/yeezy1.png";
 import BlackButton from "../common/components/BlackButton";
 import Newsletter from "../components/Newsletter";
+import MainSection from "../common/components/MainSection";
+import Section from "../common/components/Section";
 
+//simplify with big wrapper ?
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   // outline: solid;
 `;
 
-//this function it use again so create exporting component
-const MainSection = styled.div`
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  margin-top: 100px;
-  padding: 10% 20% 20%;
-`;
-// haut | horizontal | bas */
 const HomeWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -47,25 +40,18 @@ const Cercle = styled.div`
   background: ${constantStyle.BLACK_COLOR};
 `;
 
+//simplify with big wrapper ?
 const TextWrapper = styled.div`
-
   display: flex;
   height: 70%;
   width: 35%;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content: space-between;
   // outline: solid;
 `;
 
-const SellAndCollectionSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  padding: 10% 10%;
-  gap: 45px;
-  align-items: center;
-`;
 
+//simplify with big wrapper ?
 const Wrapper = styled.div`
   // outline: solid;
   display: flex;
@@ -73,6 +59,7 @@ const Wrapper = styled.div`
   padding: 0% 10%;
   gap: 35px;
 `;
+//simplify with big wrapper ?
 const Title = styled.div`
   display: flex;
   flex-direction: row;
@@ -83,7 +70,7 @@ const Home = () => {
   return (
     <Container>
       <Header />
-      <MainSection>
+      <MainSection direction="row" padding="10% 20% 20%">
         <HomeWrapper>
           <TextWrapper>
             {createText(
@@ -105,7 +92,7 @@ const Home = () => {
           </Cercle>
         </HomeWrapper>
       </MainSection>
-      <SellAndCollectionSection>
+      <Section padding="10% 10%" gap="45px" align="center" direction="column">
         <Title>
           {createText(
             constantText.EN_VEDETTE,
@@ -131,7 +118,7 @@ const Home = () => {
           <SneakerCollectionCard />
           <SneakerCollectionCard />
         </Wrapper>
-      </SellAndCollectionSection>
+      </Section>
       <Newsletter />
       <Footer />
     </Container>
