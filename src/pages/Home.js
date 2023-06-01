@@ -9,6 +9,7 @@ import SneakerCollectionCard from "../components/SneakerCollectionCard";
 import CardPicture from "../common/components/CardPicture";
 import yeezy1 from "../assets/img/yeezy1.png";
 import BlackButton from "../common/components/BlackButton";
+import Newsletter from "../components/Newsletter";
 
 const Container = styled.div`
   display: flex;
@@ -131,6 +132,7 @@ const Home = () => {
           <SneakerCollectionCard />
         </Wrapper>
       </SellAndCollectionSection>
+      <Newsletter />
       <Footer />
     </Container>
   );
